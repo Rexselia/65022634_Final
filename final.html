@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>final</title>
+</head>
+<body>
+    <fieldset style="width: 30%;margin: 1;auto">
+        <legend> Insert data</legend>
+    ชื่อ:<br />
+    <input type="text" id="txtName" />
+    <br>
+    นามสกุล:<br />
+    <input type="surtext" id="txtsur" />
+    <br>
+    เพศ:<br />
+    <input type="gender" id="txtgender" />
+    <br>
+    <button type="button" onclick="Insert()"> Add </button>
+    </fieldset>
+    <fieldset style="width: 30%;margin: 1;auto">
+        <table style="width: 100%;"<i class="fab fa-border-all"></i>
+            <thead>
+                <tr>
+                    <th>ชื่อ</th>
+                    <th>นามสกุล</th>
+                    <th>เพศ</th>
+                </tr>
+            </thead>
+            <tbody id="tbl"></tbody>
+        </table>
+    </fieldset>
+    <script>
+        function Insert() {
+            var ชื่อ = document.getElementById('txtName').value;
+            var นามสกุล = document.getElementById('txtsur').value;
+            var เพศ = document.getElementById('txtgender').value;
+
+            var table = `<tr>
+                            <td>${name}
+                            <td>${name}
+                            <td>${name}
+                
+                        </tr>`;
+            document.getElementById().innerHTML += table;
+        }
+    </script>
+
+</body>
+</html>
